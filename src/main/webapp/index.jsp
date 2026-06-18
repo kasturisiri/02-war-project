@@ -2,7 +2,7 @@
 <body>
 <h2>
 wellcome to my kasturi IT ..!<BR>
-send whatsapp message to admin team
+send whatsapp message to admin team for more info
 </h2>
 </body>
 </html>
