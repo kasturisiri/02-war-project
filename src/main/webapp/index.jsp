@@ -3,7 +3,7 @@
     <title>Kasturi IT</title>
 </head>
 <body>
-    <h2>Welcome to my Kasturi IT..!</h2>
+    <h2>Welcome to my Kasturi kmb IT team..!</h2>
 
     <p>Send WhatsApp message to admin team for more information.</p>
 
