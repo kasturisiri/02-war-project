@@ -4,9 +4,13 @@
   <groupId>com.example</groupId>
   <artifactId>my-webapp</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0-RELEASE</version>
   <name>my-webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+    <sonar.host.url>http://54.82.23.192:9000/</sonar.host.url>
+    <sonar.login>squ_8190b94c25826a22f924161969e669405d77635d</sonar.login>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -23,6 +27,7 @@
     </dependencies>
   <build>
     <finalName>my-webapp</finalName>
+<<<<<<< HEAD
 	  <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -31,4 +36,15 @@
         </plugin>
     </plugins>
   </build>
+=======
+
+    <plugins>
+        <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.7.0.1746</version>
+        </plugin>
+    </plugins>
+</build>
+>>>>>>> 2b7dfc3 (jenkins file added)
 </project>
