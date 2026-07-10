@@ -1,58 +1,59 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.example</groupId>
-  <artifactId>my-webapp</artifactId>
-  <packaging>war</packaging>
-  <version>1.0-RELEASE</version>
-  <name>my-webapp Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <properties>
-    <sonar.host.url>http://54.82.23.192:9000/</sonar.host.url>
-    <sonar.login>squ_8190b94c25826a22f924161969e669405d77635d</sonar.login>
-  </properties>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-	<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-core</artifactId>
-    <version>5.2.23.RELEASE</version>
-    <scope>compile</scope>
-    </dependency>
-    </dependencies>
-  <build>
-    <finalName>my-webapp</finalName>
-<<<<<<< HEAD
-      <plugins>
-=======
-<<<<<<< HEAD
-	  <plugins>
->>>>>>> devops
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.3.2</version>
-        </plugin>
-    </plugins>
-<<<<<<< HEAD
-</build>
-=======
-  </build>
-=======
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/maven-v4_0_0.xsd">
 
-    <plugins>
-        <plugin>
-            <groupId>org.sonarsource.scanner.maven</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <version>3.7.0.1746</version>
-        </plugin>
-    </plugins>
-</build>
->>>>>>> 2b7dfc3 (jenkins file added)
->>>>>>> devops
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>my-webapp</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-RELEASE</version>
+
+    <name>my-webapp Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <sonar.host.url>http://54.82.23.192:9000/</sonar.host.url>
+        <sonar.login>squ_8190b94c25826a22f924161969e669405d77635d</sonar.login>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.2.23.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>my-webapp</finalName>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.7.0.1746</version>
+            </plugin>
+
+        </plugins>
+    </build>
+
 </project>
