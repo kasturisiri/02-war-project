@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'slave-1'
+        label 'master'
     }
 
     stages {
@@ -9,18 +9,6 @@ pipeline {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/kasturisiri/02-war-project.git'
-            }
-        }
-
-        stage('Check Environment') {
-            steps {
-                sh '''
-                    echo "PATH=$PATH"
-                    which java
-                    java -version
-                    which mvn
-                    mvn -version
-                '''
             }
         }
 
@@ -37,6 +25,5 @@ pipeline {
                 }
             }
         }
-
     }
 }
