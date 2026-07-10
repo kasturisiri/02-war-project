@@ -1,8 +1,6 @@
 pipeline {
-    agent any
-
-    environment {
-        PATH = "$PATH:/opt/apache-maven-3.6.3/bin"
+    agent {
+        label 'slave-1'
     }
 
     stages {
@@ -11,6 +9,18 @@ pipeline {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/kasturisiri/02-war-project.git'
+            }
+        }
+
+        stage('Check Environment') {
+            steps {
+                sh '''
+                    echo "PATH=$PATH"
+                    which java
+                    java -version
+                    which mvn
+                    mvn -version
+                '''
             }
         }
 
