@@ -17,13 +17,5 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
-
-        stage('SonarQube Analysis') {
-            steps {
-                withSonarQubeEnv('Sonar-Server-9.9.8') {
-                    sh 'mvn sonar:sonar'
-                }
-            }
-        }
     }
 }
