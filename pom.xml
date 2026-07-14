@@ -14,7 +14,7 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <sonar.host.url>http:/http://34.224.22.5:9000/</sonar.host.url>
+        <sonar.host.url>http://3.93.174.12:9000/</sonar.host.url>
         <sonar.login>squ_8190b94c25826a22f924161969e669405d77635d</sonar.login>
     </properties>
 
