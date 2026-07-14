@@ -3,7 +3,7 @@
     <title>Kasturi IT</title>
 </head>
 <body>
-    <h2>Welcome to Kasturi IT ...!  </h2>
+    <h2>Welcome to Best software Kasturi IT team ...!  </h2>
 
     <p>Send WhatsApp message to admin team  and kavita team for more information.</p>
 
